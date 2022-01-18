@@ -66,7 +66,7 @@
 
   <button on:click={addBet} class='btn btn-sm w-20'>add bet</button> 
   <input bind:value={betDesc} placeholder='bet name' class='input input-sm input-bordered my-1 w-40'> 
-  <input bind:value={betValue} placeholder='value' class='input input-sm input-bordered my-1 w-22'> <br>
+  <input bind:value={betValue} placeholder='value' class='input input-sm input-bordered my-1 w-23'> <br>
 
   {#each $bets as bet (bet) }
     <div class='rounded-md mt-3 p-3 border-gray-500 border-2' animate:flip="{{duration:300}}" transition:slide='{{duration: 300}}'>

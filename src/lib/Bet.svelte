@@ -7,9 +7,10 @@
 
   const chips = getStore(_for, 0);
   const bets = getStore(_for + '_bets', []);
+  const winFormula = getStore('winFormula', 'value * 2');
   
   const won = () => {
-    $chips += value * 2;
+    $chips += Math.floor(eval($winFormula));
     remove()
   }
 
